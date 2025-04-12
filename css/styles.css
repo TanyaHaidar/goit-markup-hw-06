@@ -800,10 +800,6 @@ button {
     fill: #f4f4fd;
 }
 
-.footer-form {
-    
-}
-
 .tf-input {
     text-align: center;
     margin-bottom: 16px;
@@ -861,3 +857,71 @@ button {
     fill: #f4f4fd;
 }
 
+@media screen and (min-width: 768px) {
+.page-footer {
+        padding: 100px 0;
+    }
+
+.footer-social {
+    text-align: justify;
+    margin-left: 108px;
+    gap: 24px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.footer-icon {
+    text-align: justify;
+    padding: 24px;
+}
+
+.media-social:hover,
+.media-social:focus {
+    background-color: #31d0aa;
+}
+
+.footer-form {
+    text-align: justify;
+    margin-left: 108px;
+    gap: 24px;
+}
+
+.tf-input {
+    text-align: justify;
+}
+
+.form-one {
+    display: flex;
+    gap: 24px;
+}
+
+.input-one::placeholder {
+    color: #fff;
+}
+
+.but-subscribe {
+    margin: 0%;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.footer-container {
+        flex-wrap: nowrap;
+    }
+
+.footer-social {
+    margin-right: 120px;
+    margin-left: auto;
+
+}
+
+.footer-form {
+    margin-left: 80px;
+}
+
+}
