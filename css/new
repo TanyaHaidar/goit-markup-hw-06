@@ -105,7 +105,7 @@ button {
 }
 
 .header-logo {
-    padding: 16px 0;
+    padding: 24px 0;
     display: block;
 }
 
@@ -136,7 +136,7 @@ button {
     }
 
 
-    .header-logo {
+    .logo {
         padding: 24px 0;
         margin-right: 120px;
     }
@@ -324,10 +324,10 @@ button {
     color: #4d5ae5;
 }
 
-.social-icon-ic {
+.social-icon {
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 24px;
 }
 
 .icon-navigation {
@@ -364,24 +364,16 @@ button {
 /* one */
 
 .title {
-    width: 320px;
-    height: 432px;
     padding: 72px 0;
     align-items: center;
     background: #2e2f42;
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-mob-min.jpg);
-}
-
-@media screen and (min-resolution: 2x) {
-    .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-mob@2x-min.jpg);
-    }
+            rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk-min.jpg);
 }
 
 .title-subtitle {
@@ -396,7 +388,7 @@ button {
 
 .button {
     margin: auto;
-    margin-top: 72px;
+    margin-top: 48px;
     display: block;
     padding: 16px 32px;
     min-width: 169px;
@@ -416,21 +408,13 @@ button {
 @media screen and (min-width: 768px) {
 
 .title {
-    width: 768px;
-    height: 436px;
         padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-tab-min.jpg);
-    }
-
-@media screen and (min-resolution: 2x) {
-    .title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-tab@2x-min.jpg);
     }
-}
 
 .title-subtitle {
+    padding: 112px 0;
     max-width: 496px;
     height: 120px;
     font-size: 56px;
@@ -439,30 +423,13 @@ button {
     text-align: center;
     color: #fff;
 }
-
-.button {
-    margin-top: 36px;
-}
 }
 
 @media screen and (min-width: 1158px) {
 .title {
-    width: 1440px;
-        height: 600px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk-min.jpg);
-}
-}
-
-@media screen and (min-resolution: 2x) {
-    .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk@2x-min.jpg);
-    }
-
-.button {
-    margin-top: 48px;
+            rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk@2x-min.jpg);
 }
 }
 
@@ -481,11 +448,11 @@ button {
 .power-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 24px;
 }
 
 .power-item {
-   
+    margin-bottom: 72px;
 }
 
 .iteam-icon {
@@ -493,7 +460,6 @@ button {
 }
 
 .power-subtitle {
-    margin-bottom: 8px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
@@ -520,11 +486,6 @@ button {
         width: calc((100% - 24px) / 2);
     }
 
-
-.power-list {
-    gap: 24px;
-}
-    
 .power-subtitle {
     text-align: start;
 }
@@ -572,10 +533,7 @@ button {
 
 .taste-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 72px;
     gap: 24px;
 }
 
@@ -592,8 +550,6 @@ button {
 }
 
 .taste-item {
-    width: 264px;
-    height: 428px;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -647,6 +603,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+.taste-item {
+    width: calc((100% - 24px) / 2);
+}
 
 .ins:hover,
 .ins:focus {
@@ -662,10 +621,6 @@ button {
 .taste-item {
         width: calc((100% - 72px) / 4);
     }
-}
-
-.taste-list {
-    row-gap: 64px;
 }
 
 /* four */
@@ -754,11 +709,6 @@ button {
             0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
-
-.portfolio-list {
-    row-gap: 72px;
-}
-
 .portfolio-item {
     width: calc((100% - 24px) / 2);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -779,11 +729,6 @@ button {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-list {
-    row-gap: 48px;
-}
-
 }
 
 /* footer */
@@ -795,7 +740,6 @@ button {
 
 .footer-social {
     text-align: center;
-    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -819,7 +763,7 @@ button {
 
 .footer-icon {
     text-align: center;
-    margin-bottom: 72px;
+    padding: 72px 40px;
 }
 
 .media {
@@ -833,7 +777,6 @@ button {
 
 .social-nav {
     display: flex;
-    justify-content: center;
     gap: 16px;
 }
 
@@ -875,7 +818,7 @@ button {
 .input-one {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 288px;
+    width: 264px;
     height: 40px;
     background-color: transparent;
     font-size: 12px;
@@ -915,81 +858,71 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    .page-footer {
+.page-footer {
         padding: 100px 0;
     }
 
-    .footer-social {
-        text-align: justify;
-        margin-right: 24px;
-    }
-
-    .footer-container {
-        display: flex;
-        padding-left: 108px;
-        padding-right: 108px;
-        align-items: baseline;
-        flex-wrap: wrap;
-        
-    }
-
-    .footer-icon {
-        text-align: justify;
-        
-    }
-
-    .media-social:hover,
-    .media-social:focus {
-        background-color: #31d0aa;
-    }
-
-    .footer-form {
-        text-align: justify;
-        
-    }
-
-    .tf-input {
-        text-align: justify;
-    }
-
-    .form-one {
-        display: flex;
-    
-    }
-
-  .tf-email {
-    margin-right: 24px;
-  }
-
-.input-one {
-    width: 264px;
+.footer-social {
+    text-align: justify;
+    margin-left: 108px;
+    gap: 24px;
 }
 
-    .input-one::placeholder {
-        color: #fff;
-    }
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
 
-    .but-subscribe {
-        margin: 0%;
-    }
+.footer-icon {
+    text-align: justify;
+    padding: 24px;
+}
+
+.media-social:hover,
+.media-social:focus {
+    background-color: #31d0aa;
+}
+
+.footer-form {
+    text-align: justify;
+    margin-left: 108px;
+    gap: 24px;
+}
+
+.tf-input {
+    text-align: justify;
+}
+
+.form-one {
+    display: flex;
+    gap: 24px;
+}
+
+.input-one::placeholder {
+    color: #fff;
+}
+
+.but-subscribe {
+    margin: 0%;
+}
 }
 
 @media screen and (min-width: 1158px) {
-    .footer-container {
+.footer-container {
         flex-wrap: nowrap;
-        padding: 0;
     }
 
+.footer-social {
+    margin-right: 120px;
+    margin-left: auto;
 
-    .footer-social {
-        margin-right: 120px;
-        margin-left: auto;
+}
 
-    }
-
-    .footer-form {
-        margin-left: 80px;
-    }
+.footer-form {
+    margin-left: 80px;
+}
 }
 
 /* backdrop */
@@ -1015,7 +948,7 @@ button {
 
 .modal {
     position: absolute;
-    padding: 72px 16px 16px 16px;
+    padding: 72px 24px 24px 24px;
     top: 50%;
     left: 50%;
     width: 288px;
@@ -1201,6 +1134,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+.backdrop {
+    display: none;
+}
+}
+
+@media screen and (min-width: 1158px) {
 .backdrop {
     display: flex;
         position: fixed;
