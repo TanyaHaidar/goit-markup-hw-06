@@ -364,8 +364,7 @@ button {
 /* one */
 
 .title {
-    width: 320px;
-    height: 432px;
+    max-width: 320px;
     padding: 72px 0;
     align-items: center;
     background: #2e2f42;
@@ -416,8 +415,7 @@ button {
 @media screen and (min-width: 768px) {
 
 .title {
-    width: 768px;
-    height: 436px;
+    max-width: 768px;
         padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-tab-min.jpg);
@@ -447,20 +445,19 @@ button {
 
 @media screen and (min-width: 1158px) {
 .title {
-    width: 1440px;
-        height: 600px;
+    max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk-min.jpg);
 }
-}
+
 
 @media screen and (min-resolution: 2x) {
     .title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero/Dark-desk@2x-min.jpg);
     }
-
+}
 .button {
     margin-top: 48px;
 }
@@ -977,15 +974,18 @@ button {
 @media screen and (min-width: 1158px) {
     .footer-container {
         flex-wrap: nowrap;
-        padding: 0;
+        padding: 0 15px;
     }
 
 
     .footer-social {
         margin-right: 120px;
-        margin-left: auto;
-
+        margin-bottom: 0;
     }
+
+.footer-icon {
+    margin-bottom: 0;
+}
 
     .footer-form {
         margin-left: 80px;
